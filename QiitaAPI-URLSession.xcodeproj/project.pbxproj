@@ -13,6 +13,10 @@
 		30F24C42277D965A00BF7B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F24C40277D965A00BF7B38 /* Main.storyboard */; };
 		30F24C44277D965F00BF7B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F24C43277D965F00BF7B38 /* Assets.xcassets */; };
 		30F24C47277D965F00BF7B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F24C45277D965F00BF7B38 /* LaunchScreen.storyboard */; };
+		30F24C50277D96D100BF7B38 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F24C4E277D96D100BF7B38 /* TableViewCell.swift */; };
+		30F24C51277D96D100BF7B38 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F24C4F277D96D100BF7B38 /* TableViewCell.xib */; };
+		30F24C53277D988E00BF7B38 /* QiitaArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F24C52277D988E00BF7B38 /* QiitaArticle.swift */; };
+		30F24C59277D9AD200BF7B38 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F24C58277D9AD200BF7B38 /* QiitaAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		30F24C43277D965F00BF7B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F24C46277D965F00BF7B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F24C48277D965F00BF7B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F24C4E277D96D100BF7B38 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		30F24C4F277D96D100BF7B38 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		30F24C52277D988E00BF7B38 /* QiitaArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticle.swift; sourceTree = "<group>"; };
+		30F24C58277D9AD200BF7B38 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		30F24C39277D965A00BF7B38 /* QiitaAPI-URLSession */ = {
 			isa = PBXGroup;
 			children = (
+				30F24C57277D9AA600BF7B38 /* Utility */,
+				30F24C56277D9AA100BF7B38 /* Model */,
+				30F24C55277D9A9800BF7B38 /* View */,
+				30F24C54277D9A8F00BF7B38 /* Controller */,
 				30F24C3A277D965A00BF7B38 /* AppDelegate.swift */,
 				30F24C3C277D965A00BF7B38 /* SceneDelegate.swift */,
-				30F24C3E277D965A00BF7B38 /* ViewController.swift */,
-				30F24C40277D965A00BF7B38 /* Main.storyboard */,
 				30F24C43277D965F00BF7B38 /* Assets.xcassets */,
 				30F24C45277D965F00BF7B38 /* LaunchScreen.storyboard */,
 				30F24C48277D965F00BF7B38 /* Info.plist */,
 			);
 			path = "QiitaAPI-URLSession";
+			sourceTree = "<group>";
+		};
+		30F24C54277D9A8F00BF7B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30F24C40277D965A00BF7B38 /* Main.storyboard */,
+				30F24C3E277D965A00BF7B38 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		30F24C55277D9A9800BF7B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F24C4E277D96D100BF7B38 /* TableViewCell.swift */,
+				30F24C4F277D96D100BF7B38 /* TableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30F24C56277D9AA100BF7B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30F24C52277D988E00BF7B38 /* QiitaArticle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30F24C57277D9AA600BF7B38 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				30F24C58277D9AD200BF7B38 /* QiitaAPI.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F24C47277D965F00BF7B38 /* LaunchScreen.storyboard in Resources */,
+				30F24C51277D96D100BF7B38 /* TableViewCell.xib in Resources */,
 				30F24C44277D965F00BF7B38 /* Assets.xcassets in Resources */,
 				30F24C42277D965A00BF7B38 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F24C53277D988E00BF7B38 /* QiitaArticle.swift in Sources */,
 				30F24C3F277D965A00BF7B38 /* ViewController.swift in Sources */,
+				30F24C50277D96D100BF7B38 /* TableViewCell.swift in Sources */,
+				30F24C59277D9AD200BF7B38 /* QiitaAPI.swift in Sources */,
 				30F24C3B277D965A00BF7B38 /* AppDelegate.swift in Sources */,
 				30F24C3D277D965A00BF7B38 /* SceneDelegate.swift in Sources */,
 			);
